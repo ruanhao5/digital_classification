@@ -8,4 +8,4 @@ Reference contest: [零基础入门CV - 街景字符编码识别](https://tianch
 
 download csv file: [mchar_data_list_0515.csv](https://aliyuntianchiresult.cn-hangzhou.oss.aliyun-inc.com/file/race/documents/531795/mchar_data_list_0515.csv?Expires=1625234966&OSSAccessKeyId=LTAI5tJYjgpnqJHcXFPFwvSi&Signature=1FGyVY8E5HDVC4s0z2KGQP3vWOk%3D&response-content-disposition=attachment%3B%20)
 
-In csv file, you will see all the dataset download link.
+In csv file, you will see download link of all dataset.

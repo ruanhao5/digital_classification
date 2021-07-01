@@ -127,3 +127,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+
+# ignore dataset
+input/mchar_test_a/
+input/mchar_train/
+input/mchar_val/

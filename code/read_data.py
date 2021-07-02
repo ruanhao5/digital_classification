@@ -20,7 +20,6 @@ def parse_json(d):
 # load all train data infomation 
 train_json = json.load(open('../input/mchar_train.json'))
 
-
 img = cv2.imread('../input/mchar_train/000000.png')
 arr = parse_json(train_json['000000.png'])
 

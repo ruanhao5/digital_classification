@@ -15,7 +15,6 @@ import torch.nn as nn
 from torch.utils.data.dataset import Dataset
 import torchvision.transforms as transforms
 
-
 class SVHNDataset(Dataset):
     def __init__(self, img_path, img_label, transform=None):
         self.img_path = img_path
@@ -68,7 +67,14 @@ train_loader = torch.utils.data.DataLoader(
 
     
 val_loader = torch.utils.data.DataLoader(
-    SVHNDataset(val_path, val_label),
+    SVHNDataset(val_path, val_label,
+                    transforms.Compose([
+                       transforms.Resize((64, 128)),
+                    #    transforms.ColorJitter(0.3, 0.3, 0.2),
+                    #    transforms.RandomRotation(5),
+                       transforms.ToTensor(),
+                       transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])
+            ])), 
     batch_size=10, 
     shuffle=False, 
     num_workers=10, 
@@ -161,9 +167,8 @@ def validate(val_loader, model, criterion):
 train_loss_plot = list()
 val_loss_plot = list()
 
-
 for epoch in range(20):
-    print('Epoch: ', epoch)
+    print('\nEpoch: ', epoch)
 
     train_loss = train(train_loader, model, criterion, optimizer, epoch)
     val_loss = validate(val_loader, model, criterion)
@@ -179,10 +184,14 @@ for epoch in range(20):
 
 plt.plot(train_loss_plot)
 plt.xlabel("Epoch")
-plt.ylabel("loss")
+plt.ylabel("train_loss")
 plt.show()
 
 plt.plot(val_loss_plot)
 plt.xlabel("Epoch")
-plt.ylabel("First char Accuracy")
+plt.ylabel("val_loss")
 plt.show()
+
+
+# load model
+# model.load_state_dict(torch.load(' model.pt')) 

@@ -194,4 +194,23 @@ plt.show()
 
 
 # load model
-# model.load_state_dict(torch.load(' model.pt')) 
+
+# try:
+#     model = model.load_state_dict(torch.load('model.pt'))
+#     print("load model success")
+# except:
+#     print("No saved model. So Train the model!")
+# finally:
+#     for epoch in range(20):
+#         print('\nEpoch: ', epoch)
+
+#         train_loss = train(train_loader, model, criterion, optimizer, epoch)
+#         val_loss = validate(val_loader, model, criterion)
+        
+#         # 记录下验证集精度
+#         if val_loss < best_loss:
+#             best_loss = val_loss
+#             torch.save(model.state_dict(), './model.pt')
+            
+#         train_loss_plot.append(train_loss)
+#         val_loss_plot.append(val_loss)

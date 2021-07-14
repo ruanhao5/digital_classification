@@ -131,3 +131,6 @@ dmypy.json
 
 # ignore dataset
 input/
+input/mchar_sample_submit_A.csv
+input/mchar_train.json
+input/mchar_val.json

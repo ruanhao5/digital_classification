@@ -29,6 +29,6 @@ cd code
 pip install -r requirements.txt 
 ```
 
-## Train & Evaluate in Command Line
+## Train & Evaluate
 
 Just open jupyter notebook `main.ipynb` and run it.

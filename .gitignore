@@ -130,6 +130,4 @@ dmypy.json
 
 
 # ignore dataset
-input/mchar_test_a/
-input/mchar_train/
-input/mchar_val/
+input/

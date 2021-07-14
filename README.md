@@ -13,7 +13,7 @@ Download data and organise as follows:
 ```
 digital_classification
 ├─ code
-├─ input
+├─ input    # dataset root
 │  ├─ mchar_test_a
 │  ├─ mchar_train
 │  ├─ mchar_val

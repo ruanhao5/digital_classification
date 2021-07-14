@@ -11,16 +11,15 @@ All download link of dataset in csv file: [mchar_data_list_0515.csv](https://ali
 Download data and organise as follows:
 
 ```
+# For SVHN Dataset
 digital_classification
-├─ code
-├─ input    # dataset root
-│  ├─ mchar_test_a
-│  ├─ mchar_train
-│  ├─ mchar_val
-│  ├─ mchar_sample_submit_A.csv
-│  ├─ mchar_train.json
-│  └─ mchar_val.json
-└─ README.md
+└─ input
+   ├─ mchar_test_a
+   ├─ mchar_train
+   ├─ mchar_val
+   ├─ mchar_sample_submit_A.csv
+   ├─ mchar_train.json
+   └─ mchar_val.json
 ```
 
 ## Basic installation
@@ -29,3 +28,7 @@ digital_classification
 cd code
 pip install -r requirements.txt 
 ```
+
+## Train & Evaluate in Command Line
+
+Just open jupyter notebook `main.ipynb` and run it.

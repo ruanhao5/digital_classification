@@ -6,7 +6,7 @@ Reference contest: [零基础入门CV - 街景字符编码识别](https://tianch
 
 ## Prepare dataset
 
-All download link of dataset in csv file: [mchar_data_list_0515.csv](https://aliyuntianchiresult.cn-hangzhou.oss.aliyun-inc.com/file/race/documents/531795/mchar_data_list_0515.csv?Expires=1626503877&OSSAccessKeyId=LTAI5tJYjgpnqJHcXFPFwvSi&Signature=ca4Cbe8c37OZskPYImp7KX5%2B1Gg%3D&response-content-disposition=attachment%3B%20)
+All download link of dataset in csv file: [mchar_data_list_0515.csv](https://aliyuntianchiresult.cn-hangzhou.oss.aliyun-inc.com/file/race/documents/531795/mchar_data_list_0515.csv?Expires=1626616324&OSSAccessKeyId=LTAI5tJYjgpnqJHcXFPFwvSi&Signature=8ry5jPy3kTmxYIpMKLmywV%2F75FY%3D&response-content-disposition=attachment%3B%20)
 
 Download data and organise as follows:
 
